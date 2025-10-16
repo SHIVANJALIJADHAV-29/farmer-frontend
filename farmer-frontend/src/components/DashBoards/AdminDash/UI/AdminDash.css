@@ -1,0 +1,82 @@
+/* Fade + bounce animation */
+.bounce-in {
+  animation: bounceIn 0.8s ease-out;
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95) translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Glow text */
+.glow-title {
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 0 0 10px #2a6cd6, 0 0 20px #1e3c72;
+}
+
+/* Glassmorphism card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Header background */
+.glass-header {
+  background: linear-gradient(90deg,#1e3c72, #2a5298, #4b6cb7);
+  padding: 1.2rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Hover list effect */
+.list-hover {
+  transition: all 0.3s ease;
+}
+.list-hover:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+/* Animated icons */
+.animate-icon {
+  transition: transform 0.4s ease;
+}
+.list-hover:hover .animate-icon {
+  transform: rotate(8deg) scale(1.2);
+}
+
+/* Dashboard cards */
+.dashboard-card {
+  padding: 1rem;
+  border-radius: 20px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.dashboard-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Gradient border card styles */
+.card-gradient-green {
+  background: linear-gradient(135deg, #56ab2f, #a8e063);
+}
+.card-gradient-yellow {
+  background: linear-gradient(135deg, #fceabb, #f8b500);
+}
+.card-gradient-blue {
+  background: linear-gradient(135deg, #36d1dc, #5b86e5);
+}

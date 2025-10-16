@@ -1,0 +1,83 @@
+.product-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s ease;
+  margin: 15px auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-arc {
+  background: linear-gradient(to bottom, #e6fff2 50%, transparent 50%);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 30px 0 10px;
+}
+
+.card-arc img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.product-card h2 {
+  font-size: 1.4rem;
+  margin: 10px 0;
+  color: #1a202c;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tags span {
+  background-color: #c6f6d5;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: #22543d;
+}
+
+.info {
+  font-size: 0.85rem;
+  color: #2d3748;
+  margin-top: 10px;
+}
+.action-btns {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: #fefcbf;
+  color: #744210;
+}
+
+.btn-delete {
+  background-color: #fed7d7;
+  color: #742a2a;
+}
